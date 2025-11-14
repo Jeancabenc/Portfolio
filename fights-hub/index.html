@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FightsHub · Boxing Events</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <h1>FightsHub</h1>
+      <p>Upcoming boxing events demo</p>
+    </div>
+  </header>
+  <main class="container">
+    <section class="filters">
+      <div>
+        <label for="fighter">Fighter</label>
+        <input id="fighter" type="text" placeholder="Canelo, Usyk, Tank..." />
+      </div>
+      <div>
+        <label for="promotion">Promotion</label>
+        <select id="promotion">
+          <option value="">All promotions</option>
+          <option value="Matchroom">Matchroom</option>
+          <option value="Top Rank">Top Rank</option>
+          <option value="PBC">PBC</option>
+        </select>
+      </div>
+      <div>
+        <label for="minDate">From date</label>
+        <input id="minDate" type="date" />
+      </div>
+      <button id="clearFilters">Clear filters</button>
+    </section>
+    <section>
+      <h2 class="section-title">Upcoming events</h2>
+      <div id="eventsGrid" class="events-grid" aria-live="polite"></div>
+      <p id="emptyState" class="empty-state hidden">No events match your filters.</p>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>Demo app built for portfolio purposes. Data is static JSON.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

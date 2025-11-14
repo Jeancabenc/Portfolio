@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StatsBoard · Dashboard Demo</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="sb-header">
+    <div class="sb-container">
+      <h1>StatsBoard</h1>
+      <p>Demo dashboard for portfolio purposes</p>
+    </div>
+  </header>
+  <main class="sb-container">
+    <section class="sb-controls">
+      <label for="category">Category</label>
+      <select id="category">
+        <option value="boxing">Boxing</option>
+        <option value="cars">Cars</option>
+        <option value="football">Football</option>
+      </select>
+    </section>
+    <section class="sb-grid">
+      <article class="sb-card large">
+        <h2>Performance over time</h2>
+        <canvas id="lineChart" height="140"></canvas>
+      </article>
+      <article class="sb-card">
+        <h2>Category breakdown</h2>
+        <canvas id="barChart" height="140"></canvas>
+      </article>
+      <article class="sb-card">
+        <h2>Raw data</h2>
+        <table id="dataTable" class="sb-table"></table>
+      </article>
+    </section>
+  </main>
+  <footer class="sb-footer">
+    <div class="sb-container">
+      <p>Static dataset loaded from JSON for demo.</p>
+    </div>
+  </footer>
+  <script src="dashboard.js"></script>
+</body>
+</html>

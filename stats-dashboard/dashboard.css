@@ -1,0 +1,24 @@
+:root {
+        --bg: #1f1d00;
+        --fg: #fff7b0;
+        --card: #3c3900;
+        --accent: #ffd54a;
+    }
+    
+body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background: var(--bg);color: var(--fg);}
+.sb-container{width:min(1100px,100% - 2.5rem);margin-inline:auto;}
+.sb-header{background: var(--card);border-bottom:1px solid #262938;padding:1rem 0;}
+.sb-header h1{margin:0;}
+.sb-header p{margin:.1rem 0 0;color: var(--fg);font-size:.9rem;}
+.sb-controls{padding:1.5rem 0 0;}
+.sb-controls label{display:block;font-size:.85rem;margin-bottom:.2rem;color: var(--fg);}
+.sb-controls select{padding:.4rem .6rem;border-radius:.4rem;border:1px solid #262938;background: var(--bg);color: var(--fg);}
+.sb-grid{display:grid;grid-template-columns:2fr 1fr;gap:1.5rem;padding:1.5rem 0 3rem;}
+.sb-card{background: var(--card);border-radius:.9rem;border:1px solid #262938;padding:1rem 1.3rem;}
+.sb-card.large{grid-column:1 / -1;}
+.sb-card h2{margin-top:0;margin-bottom:.6rem;font-size:1.1rem;}
+.sb-table{width:100%;border-collapse:collapse;font-size:.9rem;}
+.sb-table th,.sb-table td{border:1px solid #262938;padding:.35rem .45rem;text-align:left;}
+.sb-table th{background:#161927;font-weight:600;}
+.sb-footer{border-top:1px solid #262938;padding:1rem 0;background: var(--bg);color: var(--fg);font-size:.8rem;text-align:center;}
+@media(max-width:720px){.sb-grid{grid-template-columns:1fr;}}

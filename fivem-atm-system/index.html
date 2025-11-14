@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FiveM ATM · Banking UI Demo</title>
+  <link rel="stylesheet" href="ui.css" />
+</head>
+<body>
+  <div class="atm-shell">
+    <header class="atm-header">
+      <h1>Fleeca Online</h1>
+      <p>Roleplay ATM demo</p>
+    </header>
+    <main class="atm-main">
+      <aside class="atm-menu">
+        <button data-view="balance" class="active">Balance</button>
+        <button data-view="deposit">Deposit</button>
+        <button data-view="withdraw">Withdraw</button>
+        <button data-view="history">History</button>
+      </aside>
+      <section class="atm-view">
+        <div id="view-balance" class="view active">
+          <h2>Current balance</h2>
+          <p class="balance" id="balanceValue">$0</p>
+          <p class="hint">Balance is stored in localStorage for this demo.</p>
+        </div>
+        <div id="view-deposit" class="view">
+          <h2>Deposit</h2>
+          <label>Amount</label>
+          <input id="depositAmount" type="number" min="1" />
+          <button id="depositBtn">Confirm deposit</button>
+        </div>
+        <div id="view-withdraw" class="view">
+          <h2>Withdraw</h2>
+          <label>Amount</label>
+          <input id="withdrawAmount" type="number" min="1" />
+          <button id="withdrawBtn">Confirm withdraw</button>
+        </div>
+        <div id="view-history" class="view">
+          <h2>Transaction history</h2>
+          <ul id="historyList" class="history"></ul>
+        </div>
+      </section>
+    </main>
+    <footer class="atm-footer">
+      <p>UI inspired by FiveM scripts. Frontend-only demo.</p>
+    </footer>
+  </div>
+  <script src="ui.js"></script>
+</body>
+</html>

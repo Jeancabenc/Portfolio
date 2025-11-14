@@ -1,0 +1,46 @@
+{
+  "events": [
+    {
+      "title": "Canelo \u00c1lvarez vs. David Benavidez",
+      "date": "2025-05-17",
+      "city": "Las Vegas",
+      "country": "USA",
+      "promotion": "PBC",
+      "weight": "Super Middleweight",
+      "venue": "T-Mobile Arena",
+      "broadcast": "PPV",
+      "fighters": [
+        "Saul Alvarez",
+        "David Benavidez"
+      ]
+    },
+    {
+      "title": "Gervonta Davis vs. Shakur Stevenson",
+      "date": "2025-06-21",
+      "city": "New York",
+      "country": "USA",
+      "promotion": "Top Rank",
+      "weight": "Lightweight",
+      "venue": "Madison Square Garden",
+      "broadcast": "ESPN+",
+      "fighters": [
+        "Gervonta Davis",
+        "Shakur Stevenson"
+      ]
+    },
+    {
+      "title": "Oleksandr Usyk vs. Tyson Fury II",
+      "date": "2025-04-30",
+      "city": "Riyadh",
+      "country": "Saudi Arabia",
+      "promotion": "Matchroom",
+      "weight": "Heavyweight",
+      "venue": "Riyadh Arena",
+      "broadcast": "DAZN",
+      "fighters": [
+        "Oleksandr Usyk",
+        "Tyson Fury"
+      ]
+    }
+  ]
+}

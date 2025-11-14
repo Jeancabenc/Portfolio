@@ -1,0 +1,53 @@
+{
+  "boxing": [
+    {
+      "label": "Jabs landed",
+      "value": 64,
+      "extra": "Last 3 fights"
+    },
+    {
+      "label": "Power punches",
+      "value": 92,
+      "extra": "Last 3 fights"
+    },
+    {
+      "label": "Rounds boxed",
+      "value": 24,
+      "extra": "Year to date"
+    }
+  ],
+  "cars": [
+    {
+      "label": "Miles driven",
+      "value": 1200,
+      "extra": "This month"
+    },
+    {
+      "label": "Fuel used (gal)",
+      "value": 46,
+      "extra": "This month"
+    },
+    {
+      "label": "Avg MPG",
+      "value": 26,
+      "extra": "Highway mixed"
+    }
+  ],
+  "football": [
+    {
+      "label": "Goals",
+      "value": 12,
+      "extra": "Season"
+    },
+    {
+      "label": "Assists",
+      "value": 7,
+      "extra": "Season"
+    },
+    {
+      "label": "Shots on target",
+      "value": 35,
+      "extra": "Season"
+    }
+  ]
+}

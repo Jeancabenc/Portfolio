@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyTech Tools · Utility Collection</title>
+  <link rel="stylesheet" href="tools.css" />
+</head>
+<body>
+  <header class="mt-header">
+    <div class="mt-container">
+      <h1>MyTech Tools</h1>
+      <p>Small utilities built while practicing JavaScript.</p>
+    </div>
+  </header>
+  <main class="mt-container">
+    <nav class="mt-tabs">
+      <button data-tab="password" class="active">Password generator</button>
+      <button data-tab="converter">USD ⇄ DOP converter</button>
+      <button data-tab="notes">Notes</button>
+      <button data-tab="validator">Form validator</button>
+    </nav>
+
+    <section id="tab-password" class="mt-panel active">
+      <h2>Password generator</h2>
+      <label>Length</label>
+      <input id="pwLength" type="number" min="6" max="32" value="12" />
+      <label><input type="checkbox" id="pwUpper" checked /> Include uppercase</label>
+      <label><input type="checkbox" id="pwNumbers" checked /> Include numbers</label>
+      <label><input type="checkbox" id="pwSymbols" /> Include symbols</label>
+      <button id="pwGenerate">Generate</button>
+      <pre id="pwOutput" class="mt-output"></pre>
+    </section>
+
+    <section id="tab-converter" class="mt-panel">
+      <h2>USD ⇄ DOP converter</h2>
+      <p>Rate is static for demo purposes.</p>
+      <label>USD</label>
+      <input id="usdInput" type="number" min="0" step="0.01" />
+      <label>DOP</label>
+      <input id="dopInput" type="number" min="0" step="0.01" />
+      <button id="convUsdToDop">USD → DOP</button>
+      <button id="convDopToUsd">DOP → USD</button>
+    </section>
+
+    <section id="tab-notes" class="mt-panel">
+      <h2>Notes</h2>
+      <textarea id="notesArea" rows="8" placeholder="Write anything here..."></textarea>
+      <button id="notesSave">Save notes</button>
+      <p class="hint">Notes are stored in localStorage only on this browser.</p>
+    </section>
+
+    <section id="tab-validator" class="mt-panel">
+      <h2>Form validator</h2>
+      <form id="demoForm" novalidate>
+        <label>Email</label>
+        <input id="valEmail" type="email" />
+        <label>Password (min 8 chars)</label>
+        <input id="valPassword" type="password" />
+        <label>Confirm password</label>
+        <input id="valPassword2" type="password" />
+        <button type="submit">Validate</button>
+      </form>
+      <ul id="valErrors" class="mt-errors"></ul>
+    </section>
+  </main>
+  <footer class="mt-footer">
+    <div class="mt-container">
+      <p>Demo utilities built for portfolio.</p>
+    </div>
+  </footer>
+  <script src="tools.js"></script>
+</body>
+</html>
