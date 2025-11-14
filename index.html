@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jean Carlos Bencosme | Web Developer</title>
+  <meta name="description" content="Portfolio of Jean Carlos Bencosme, a web developer focused on frontend, APIs, and real-world projects around cars, sports, and gaming." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">Jean Carlos<span>.</span></div>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-kicker">Web Developer · Automotive Enthusiast · Soccer Fan</p>
+          <h1>Hi, I’m <span>Jean Carlos</span>.</h1>
+          <p class="hero-subtitle">
+            I build reliable, real-world web applications with clean interfaces.
+            I’m based in Harrisburg, PA and currently finishing my Web Development
+            Certificate while working as a CDL Class B school bus driver.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn primary">View projects</a>
+            <a href="#contact" class="btn ghost">Get in touch</a>
+          </div>
+          <p class="hero-note">
+            Looking for junior web developer roles, internships, or apprenticeship-style opportunities.
+          </p>
+        </div>
+        <aside class="hero-card">
+          <div class="hero-tag">Open to work</div>
+          <ul class="hero-list">
+            <li><strong>Location:</strong> Harrisburg, Pennsylvania (open to remote)</li>
+            <li><strong>Focus:</strong> Frontend, APIs, small full-stack projects</li>
+            <li><strong>Interests:</strong> Cars, boxing, Soccer, gaming</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Selected projects</h2>
+        <p class="section-intro">
+          A sample of the projects I’ve been building. Each one started from a real problem, interest of mine or just examples for portfolio.
+        </p>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <header class="project-header">
+              <h3>FightsHub · Boxing events web app</h3>
+              <p class="project-meta">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Fetch API</span>
+              </p>
+            </header>
+            <p>Responsive app to explore upcoming boxing events with filtering by fighter and promotion.</p>
+            <ul class="project-bullets">
+              <li>Loads fight data from a local JSON file using the Fetch API.</li>
+              <li>Filter bar for fighter name, promotion, and minimum date.</li>
+              <li>Card layout that adapts to mobile and desktop.</li>
+            </ul>
+            <footer class="project-links">
+              <a href="C:\Users\Jean Carlos Bencosme\Documents\portfolio_final_corrected\fights-hub\index.html" class="text-link" target="_blank">Open project</a>
+            </footer>
+          </article>
+
+          <article class="project-card">
+            <header class="project-header">
+              <h3>AutoCustomz · Automotive services site</h3>
+              <p class="project-meta">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span>
+              </p>
+            </header>
+            <p>Marketing site for an automotive customization business, designed in Figma and built with semantic HTML/CSS.</p>
+            <ul class="project-bullets">
+              <li>Home, Services, Gallery, and Contact pages.</li>
+              <li>Shared navigation and responsive grid system.</li>
+              <li>Automotive-inspired color palette and typography.</li>
+            </ul>
+            <footer class="project-links">
+              <a href="C:\Users\Jean Carlos Bencosme\Documents\portfolio_final_corrected\autocustomz\index.html" class="text-link" target="_blank">Open project</a>
+            </footer>
+          </article>
+
+          <article class="project-card">
+            <header class="project-header">
+              <h3>FiveM ATM system · In-game banking UI</h3>
+              <p class="project-meta">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </p>
+            </header>
+            <p>ATM interface inspired by my FiveM scripts. This web version simulates deposits, withdrawals, and balance storage.</p>
+            <ul class="project-bullets">
+              <li>Single-page panel with tabs for balance, deposit, and withdraw.</li>
+              <li>Client-side validation and transaction history.</li>
+              <li>Uses localStorage to persist the demo balance.</li>
+            </ul>
+            <footer class="project-links">
+              <a href="C:\Users\Jean Carlos Bencosme\Documents\portfolio_final_corrected\fivem-atm-system\index.html" class="text-link" target="_blank">Open project</a>
+            </footer>
+          </article>
+
+          <article class="project-card">
+            <header class="project-header">
+              <h3>StatsBoard · Interactive dashboard</h3>
+              <p class="project-meta">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Chart.js</span>
+              </p>
+            </header>
+            <p>Dashboard layout that visualizes sample stats data using charts and tables.</p>
+            <ul class="project-bullets">
+              <li>Line and bar charts powered by Chart.js.</li>
+              <li>Filter controls to focus on a single category.</li>
+              <li>Responsive grid layout for cards.</li>
+            </ul>
+            <footer class="project-links">
+              <a href="C:\Users\Jean Carlos Bencosme\Documents\portfolio_final_corrected\stats-dashboard\index.html" class="text-link" target="_blank">Open project</a>
+            </footer>
+          </article>
+
+          <article class="project-card">
+            <header class="project-header">
+              <h3>MyTech Tools · Utility collection</h3>
+              <p class="project-meta">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              </p>
+            </header>
+            <p>Small toolset: password generator, USD⇄DOP converter, notes pad, and form validator.</p>
+            <ul class="project-bullets">
+              <li>Tab-based interface to switch between tools.</li>
+              <li>LocalStorage keeps notes between sessions.</li>
+              <li>Clean, minimal layout focused on usability.</li>
+            </ul>
+            <footer class="project-links">
+              <a href="../mytech-tools/index.html" class="text-link" target="_blank">Open project</a>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section section-alt">
+      <div class="container about-grid">
+        <div>
+          <h2 class="section-title">About</h2>
+          <p class="section-intro">
+            I like working on practical projects that people actually use, especially around
+            cars, sports, and small businesses.
+          </p>
+          <p>
+            My name is <strong>Jean Carlos Bencosme</strong>. I’m 21 and based in Harrisburg, PA.
+            I built my first PC at 13 and have been around hardware, games, and software ever since.
+          </p>
+          <p>
+            I completed a <strong>Graphic Design Certificate</strong> at HACC, and I’m now finishing a
+            <strong>Web Development Certificate</strong>. Recently I’ve been focusing on JavaScript,
+            responsive layouts, and basic backend concepts.
+          </p>
+        </div>
+        <aside>
+          <h3 class="about-subtitle">What I enjoy</h3>
+          <ul class="about-list">
+            <li><strong>Cars:</strong> Subaru BRZ owner, LED lighting projects, 3000GT restoration.</li>
+            <li><strong>Football:</strong> Following Champions League and Premier League.</li>
+            <li><strong>Combat sports:</strong> Boxing and UFC — FightsHub started as a way to track events.</li>
+            <li><strong>Gaming/dev:</strong> Scripts for roleplay servers and small experiments.</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2 class="section-title">Let’s work together</h2>
+          <p class="section-intro">
+            If you’re hiring for a junior web developer or working on something related
+            to tech, automotive, sports, or gaming, I’d be happy to talk.
+          </p>
+          <ul class="contact-list">
+            <li><strong>Email:</strong> <a href="mailto:jeanca.benc@gmail.com">jeanca.benc@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/jeancabenc" target="_blank">https://github.com/jeancabenc</a></li>
+            <li><strong>LinkedIn:</strong> <a href="www.linkedin.com/in/jean-carlos-bencosme-6233b9306" target="_blank">www.linkedin.com/in/jean-carlos-bencosme-6233b9306</a></li>
+            <li><strong>Location:</strong> Harrisburg, PA · open to remote</li>
+          </ul>
+        </div>
+        <div>
+          <form class="contact-form">
+            <label for="name">Name</label>
+            <input id="name" type="text" placeholder="Your name" required />
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="you@example.com" required />
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about the role, project, or collaboration..." required></textarea>
+            <button type="submit" class="btn primary" disabled>Send message</button>
+            <p class="form-note">Static demo — in production this would be wired to a backend.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>© <span id="year"></span> Jean Carlos Bencosme. All rights reserved.</p>
+      <p>Built with HTML, CSS, and a bit of JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
